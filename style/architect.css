@@ -100,10 +100,12 @@ main{
     max-width: 1300px;
     margin: 0 auto;
     margin-top: 5.3rem;
+    
 }
 .teams-container{
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
     
 }
 .teams-img-container{
@@ -136,7 +138,9 @@ font-weight: 700;
         flex-direction: column;
         padding: 10px;
     }
-    nav{
+    nav,
+    .teams-container
+    {
         flex-direction: column;
     }
     .banner-title{
@@ -146,13 +150,19 @@ font-weight: 700;
     .banner-content{
         max-width: 60vw;
     }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+   
 
 }
 /* tablet */
-@media screen and (min-width:576px) and (max-width:960px) {
-    nav{
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav, .teams-container{
         flex-direction: column;
     }
+    
 }
     
 
